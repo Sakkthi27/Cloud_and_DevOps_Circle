@@ -118,6 +118,7 @@ git — version
 #### Clone repository
 ```bash
 git clone https://github.com/Sakkthi27/Cloud_and_DevOps_Circle.git
+cd ThreeTierArchitecture/
 ```
 
 #### Install node.js
