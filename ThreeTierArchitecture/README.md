@@ -117,7 +117,7 @@ git — version
 
 #### Clone repository
 ```bash
-git clone https://github.com/learnItRightWay01/react-node-mysql-app.git
+git clone https://github.com/Sakkthi27/Cloud_and_DevOps_Circle.git
 ```
 
 #### Install node.js
@@ -194,7 +194,7 @@ sudo systemctl restart nginx
 
 ## User data scripts
 #### Install NGINX
-For [AWS solutions - 06](https://youtu.be/snQlL0fJI3Q) and  [AWS solutions - 07](https://youtu.be/eRX1FI2cFi8)
+
 
 ```bash
 #!/bin/bash 
