@@ -74,7 +74,7 @@ It allows users to **Create, Read, Update, and Delete (CRUD)** data without mana
 
 | Component | AWS Service | Description |
 |------------|-------------|-------------|
-| Frontend | **S3 + CloudFront** | Static web hosting with global content delivery |
+| Frontend | **S3 + CloudFront + Route 53** | Static web hosting with global content delivery with Custom Domain |
 | Backend | **AWS Lambda (Python 3.12)** | Serverless compute for CRUD operations |
 | API Layer | **Amazon API Gateway** | Exposes RESTful endpoints |
 | Database | **Amazon DynamoDB** | NoSQL database for storing student data |
