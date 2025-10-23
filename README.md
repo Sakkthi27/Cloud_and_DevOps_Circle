@@ -91,8 +91,6 @@ It allows users to **Create, Read, Update, and Delete (CRUD)** data without mana
 - **Lambda Functions** → Implemented CRUD logic (refer to individual files):
   - `insertStudentData`
   - `getStudent`
-  - `updateStudentData`
-  - `deleteStudentData`
 - **API Gateway** → Configured REST API with endpoints for each Lambda.
 - **Frontend (S3)** → Contains static website integrated with API Gateway.
 - **CloudFront** → Distributes content globally with HTTPS and caching enabled.
