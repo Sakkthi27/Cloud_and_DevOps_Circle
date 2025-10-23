@@ -6,6 +6,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazon-aws" />
   <img src="https://img.shields.io/badge/Language-Node.js%20%7C%20Express.js-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/Language-Python%20(3.12)-blue?logo=python" />
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" />
 </p>
 
