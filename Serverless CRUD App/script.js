@@ -1,5 +1,5 @@
 // Replace this with your API Gateway invoke URL (ending with /student or /data)
-const apiUrl = "https://jrkrqs3xwl.execute-api.us-east-1.amazonaws.com/prod/";
+const apiUrl = "your_api_gateway_url";
 
 // Save student data
 async function saveStudent() {
