@@ -6,6 +6,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?logo=amazon-aws" />
   <img src="https://img.shields.io/badge/Language-Node.js%20%7C%20Express.js-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/Language-Python%20(3.12)-blue?logo=python" />
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" />
 </p>
 
@@ -56,3 +57,63 @@ Cloud_and_DevOps_Circle/
 │   ├── backend/          # Node.js API service
 │   └── README.md         # Project-specific details
 └── README.md             # This file
+```
+---
+
+## 🏗️ Project 2: Serverless CRUD Application
+
+### 🧩 Overview
+The **Serverless CRUD Application** demonstrates a fully managed, event-driven architecture built using **AWS Serverless Services**.  
+It allows users to **Create, Read, Update, and Delete (CRUD)** data without managing any servers — ideal for scalable, cost-effective applications.
+
+<p align="center">
+  <img src="./Serverless CRUD App/ServerLess CRUD App.jpg" width="600" alt="Serverless CRUD Architecture Diagram"/>
+</p>
+
+### ⚙️ Tech Stack
+
+| Component | AWS Service | Description |
+|------------|-------------|-------------|
+| Frontend | **S3 + CloudFront + Route 53** | Static web hosting with global content delivery with Custom Domain |
+| Backend | **AWS Lambda (Python 3.12)** | Serverless compute for CRUD operations |
+| API Layer | **Amazon API Gateway** | Exposes RESTful endpoints |
+| Database | **Amazon DynamoDB** | NoSQL database for storing student data |
+| IAM Role | **Lambda Execution Role** | Provides Lambda permissions for DynamoDB & CloudWatch |
+
+---
+
+### 🧰 Implementation Summary
+
+- **DynamoDB Table** → Created as `studentData` with partition key `studentId`.  
+- **IAM Role** → Named `lambda-dynamodb-admin-role` with:
+  - `AWSLambdaBasicExecutionRole`
+  - `AmazonDynamoDBFullAccess`
+- **Lambda Functions** → Implemented CRUD logic (refer to individual files):
+  - `insertStudentData`
+  - `getStudent`
+- **API Gateway** → Configured REST API with endpoints for each Lambda.
+- **Frontend (S3)** → Contains static website integrated with API Gateway.
+- **CloudFront** → Distributes content globally with HTTPS and caching enabled.
+
+---
+
+### 🧩 Architecture Summary
+
+- **Frontend (S3 + CloudFront)** → Interacts via **API Gateway**
+- **API Gateway** → Invokes **Lambda Functions**
+- **Lambda** → Performs CRUD operations on **DynamoDB**
+- **IAM Role** → Grants necessary access securely
+
+---
+
+### 🧠 Key Learnings
+
+✅ Understanding of Serverless architecture and event-driven design  
+✅ Hands-on experience with AWS Lambda, API Gateway, DynamoDB, S3, and CloudFront  
+✅ End-to-end deployment without managing infrastructure  
+
+---
+
+📍 *Detailed setup and configuration guide available in*  
+[`Serverless CRUD App/README.md`](./Serverless%20CRUD%20App/README.md)
+

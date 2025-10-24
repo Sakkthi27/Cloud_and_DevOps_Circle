@@ -14,10 +14,9 @@ The application allows users to view and add **student data** stored in DynamoDB
 
 ## 🏗️ Architecture Overview
 
-```
-
-
-````
+<p align="center">
+  <img src="./ServerLess%20CRUD%20App.jpg" width="600" alt="ServerLess"/>
+</p>
 
 ---
 
